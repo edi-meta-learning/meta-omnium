@@ -1,0 +1,14 @@
+*.png
+*.jpg
+*.csv
+*.jpeg
+*.pyc
+*.txt
+*.pkl
+*.xml
+.DS_Store
+*.zip
+*.bmp
+*.tar.gz
+*.ipynb
+*.out
