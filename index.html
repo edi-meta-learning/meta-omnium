@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Meta Omnium</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/svg" href="images/images_icon.svg" />
+
+<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+
+<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+
+<link rel="stylesheet" type="text/css" href="css/util.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<meta name="robots" content="noindex, follow">
+
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"></span>
+						<h1>Meta Omnium</h1>
+						<p>A Benchmark for General-Purpose Learning-to-Learn<br />
+							<ul class="actions special icons">
+						<li>
+							<li><a href="https://arxiv.org/" class="button icon regular fa-file-alt">Paper</a>
+								<a href="https://github.com/edi-meta-learning/meta-omnium" class="button icon brands fa-github">Code</a>
+								<a href="https://drive.google.com/drive/folders/1NKb0uLJqmAauE9FY18T-qQ-T6k5LA_yt?usp=sharing" class="button icon fa-images">Dataset</a>
+							</li>
+						</ul>
+
+						</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">Introduction</a></li>
+							<li><a href="#dataset">Dataset</a></li>
+							<li><a href="#code">Code</a></li>
+							<li><a href="#citation">Citation</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Introduction</h2>
+										</header>
+										<p class="content">Meta Omnium is a multi-task few-shot learning benchmark that evaluates generalization across diverse computer vision task types. It includes tasks such as recognition, keypoint localization and semantic segmentation, and so enables testing of few-shot generalization to a much larger extent than was previously possible.</p>
+										<p class="content">Meta Omnium has a clear hyper-parameter tuning (HPO) and model selection protocol, to facilitate future fair comparison across current and future few-shot learning algorithms.
+										The benchmark already includes multi-task extensions of the most popular few-shot learning approaches and analyzes their ability to generalize across tasks and to transfer knowledge between them.</p>
+										<p class="content">We invite researchers to use our benchmark and study how to improve the ability of machine learning models to do general-purpose few-shot learning.</p>
+									</div>
+									<span class="image"><img src="images/figure1.jpg" alt="" /></span>
+								</div>
+							</section>
+
+
+						<!-- First Section -->
+							<section id="dataset" class="main special">
+								<header class="major">
+									<h2>Dataset</h2>
+									<p>Meta Omnium is lightweight yet includes images from many different domains and task types</p>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon fa-images"></span>
+										<strong>160,000 +</strong> Images
+									</li>
+									<li class="style2">
+										<span class="icon solid fa-database"></span>
+										<strong>21</strong> Domains
+
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-tasks"></span> 
+										<strong>3+1</strong> Seen and Unseen Tasks
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-save"></span>
+										<strong>3.1GB</strong> Storage
+									</li>
+								</ul>
+								<p class="content">
+									Meta Omnium includes over <b>160,000 images</b> images from <b>21 public datasets</b>, representing <b>3 seen tasks</b>: recognition, keypoint localization, semantic segmentation, and <b>1 unseen task</b>: regression.
+									<br>We have preprocessed the datasets and split them into: <b>meta-training</b>; <b>in-domain</b> and <b>out-of-domain meta-validation</b>; <b>in-domain, out-of-domain</b> and <b>out-of-task meta-testing</b> sets.
+								</p>
+
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://arxiv.org/" class="button primary">Learn More</a>
+										<a href="https://drive.google.com/drive/folders/1NKb0uLJqmAauE9FY18T-qQ-T6k5LA_yt?usp=sharing" class="button primary">Download Data</a></li>
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="code" class="main special">
+								<header class="major">
+									<h2>Code</h2>
+									<p>
+										Our code makes it simple to use the benchmark, run experiments and add new approaches
+									</p>
+									
+								</header>
+								<p align="justify">
+									We provide all details and instructions needed to run experiments using Meta Omnium, including a link to <b>download</b> the preprocessed <b>data</b>. 
+									We include <b>multi-task implementation</b> of popular <b>few-shot learning</b> algorithms (e.g. MAML, ProtoNets, Deep differentiable ridge-regression) as well as simple <b>baselines</b> (e.g. fine-tuning or training from scratch). 
+									Additionally we include code for <b>hyper-parameter optimization</b> to simplify selection of hyper-parameters of new approaches.
+								</p>
+
+			
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="https://github.com/edi-meta-learning/meta-omnium" class="button primary">Get Started</a></li>
+									</ul>
+								</footer>
+							</section>
+
+    <!-- ======= Citation Section ======= -->
+    <section id="citation" class="main special">
+		<div class="content">
+		<header class="major">
+				<h2>Citation</h2>
+				<p>If you are using Meta Omnium, please cite our paper:</p>
+		</header>
+<pre align="left"><code>@inproceedings{metaomnium2023,
+	title={Meta Omnium: A Benchmark for General-Purpose Learning-to-Learn},
+	author={Bohdal, Ondrej and Tian, Yinbing and Zong, Yongshuo and Chavhan, Ruchika and Li, Da and Gouk, Henry and Guo, Li and Hospedales, Timothy},
+	booktitle={CVPR},
+	year = {2023}
+}</code></pre>
+		</div>
+
+
+    </section><!-- End Citation Section -->
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>GitHub</dt>
+								<dd><a href="https://github.com/edi-meta-learning/meta-omnium/issues">Ask via GitHub issues</a></dd>
+							</dl>
+						</section>
+						<p class="copyright">Design: <a href="https://html5up.net">HTML5 UP</a></p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
