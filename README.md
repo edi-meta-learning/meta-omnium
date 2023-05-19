@@ -1,6 +1,8 @@
 # Meta Omnium: A Benchmark for General-Purpose Learning-to-Learn
 Meta-learning and other approaches to few-shot learning are widely studied for image recognition, and are increasingly applied to other vision tasks such as pose estimation and dense prediction. This naturally raises the question of whether there is any few-shot meta-learning algorithm capable of generalizing across these diverse task types? To support the community in answering this question, we introduce Meta Omnium, a dataset-of-datasets spanning multiple vision tasks including recognition, keypoint localization, semantic segmentation and regression. We experiment with popular few-shot meta-learning baselines and analyze their ability to generalize across tasks and to transfer knowledge between them. Meta Omnium enables meta-learning researchers to evaluate model generalization to a much wider array of tasks than previously possible, and provides a single framework for evaluating meta-learners across a wide suite of vision applications in a consistent manner.
 
+[[Paper]](https://arxiv.org/abs/2305.07625)
+
 ## Data
 You can download data from [here](https://drive.google.com/drive/folders/1NKb0uLJqmAauE9FY18T-qQ-T6k5LA_yt?usp=sharing) and put it in `data` directory (each unzipped dataset should have a directory in `data`).
 Data is in the format shown on `Example_dataset` in `data` directory. We also include scripts that we have used for processing the original datasets.
