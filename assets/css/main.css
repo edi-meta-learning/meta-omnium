@@ -63,6 +63,8 @@ table {
     margin-bottom: 1rem;
     color: #212529;
     vertical-align: top;
+    table-layout: fixed;
+
 
 }
 
@@ -205,6 +207,10 @@ p.content {
     -webkit-column-gap: 2em;
     -ms-column-gap: 2em;
     column-gap: 2em;
+    text-align: justify;
+}
+p.bulletpoints {
+    text-indent:2em;
     text-align: justify;
 }
 
@@ -3664,6 +3670,9 @@ body.is-preload #header.alt .logo {
 
 #main table tbody tr {
     border-color: #dddddd;
+    display: table-row;
+    vertical-align: inherit;
+
 }
 
 #main table tbody tr:nth-child(2n + 1) {
@@ -3676,6 +3685,12 @@ body.is-preload #header.alt .logo {
     vertical-align: inherit;
     font-weight: bold;
     text-align: -webkit-match-parent;
+
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+
+
 }
 
 #main table thead {
@@ -3686,6 +3701,7 @@ body.is-preload #header.alt .logo {
     border-width: 0;
     border-top: solid black;
     border-bottom: solid black;
+
 }
 
 #main table tfoot {

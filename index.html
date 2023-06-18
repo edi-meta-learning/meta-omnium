@@ -59,10 +59,10 @@
     <nav id="nav">
         <ul>
             <li><a href="#intro" class="active">Introduction</a></li>
-            <li><a href="#why" class="active">Why meta-omnium?</a></li>
+            <li><a href="#why" class="active">Why Meta Omnium?</a></li>
             <li><a href="#dataset">Dataset</a></li>
             <li><a href="#code">Code</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+<!--            <li><a href="#gallery">Gallery</a></li>-->
             <li><a href="#citation">Citation</a></li>
         </ul>
     </nav>
@@ -97,34 +97,32 @@
 
         <section id="why" class="main special">
             <header class="major">
-                <h2>Why meta-omnium?</h2>
-            </header>
+                <h2>Why Meta Omnium?</h2>
 
-            <p>
-                <i class="icon solid fa-check" style="color: #f29107;"></i> Test the generality of your meta-learner:
+
+            <p class="bulletpoints" >
+                <i class="icon solid fa-check" style="color: #f29107;"></i>        Test the generality of your meta-learner:
                 Can you really learn to learn, and not just learn-to-categorise or learn to regress?
             </p>
-            <p>
+            <p class="bulletpoints">
                 <i class="icon solid fa-check" style="color: #f29107;"></i> A benchmark that really requires adaptation:
                 pre-trained feature strength is not the dominant factor.
             </p>
-            <p>
-                <i class="icon solid fa-check" style="color: #f29107;"></i> Supports study of task heterogeneity and OOD
-                domain generalisation for for meta-learners.
+            <p class="bulletpoints">
+                <i class="icon solid fa-check" style="color: #f29107;"></i> Supports study of task heterogeneity and out-of-domain generalisation for meta-learners.
             </p>
-            <p>
+            <p class="bulletpoints">
                 <i class="icon solid fa-check" style="color: #f29107;"></i> Study the intersection of multi-task
                 learning & meta-learning.
             </p>
-            <p>
+            <p class="bulletpoints">
                 <i class="icon solid fa-check" style="color: #f29107;"></i> Offers a clear hyper-parameter tuning
                 protocol to promote good science.
             </p>
-            <p>
-                <i class="icon solid fa-check" style="color: #f29107;"></i> Lightweight for easy development (only
-                2-hours full run on 1080Ti)!
+            <p class="bulletpoints">
+                <i class="icon solid fa-check" style="color: #f29107;"></i> Lightweight for easy development (lightest setting only 2-hours full run on 1080 Ti)!
             </p>
-
+</header>
             <footer class="major">
                 <ul class="actions special">
                     <li><a href="https://github.com/edi-meta-learning/meta-omnium" class="button primary">Get
@@ -161,6 +159,7 @@
                 Meta Omnium includes over <b>160,000 images</b> images from <b>21 public datasets</b>, representing <b>3
                 seen tasks</b>: recognition, keypoint localization, semantic segmentation, and <b>1 unseen task</b>:
                 regression.
+                <br>We have preprocessed the datasets and split them into: <b>meta-training</b>; <b>in-domain (ID)</b> and <b>out-of-domain (OOD) meta-validation</b>; <b>in-domain, out-of-domain</b> and <b>out-of-task (OOT) meta-testing</b> sets.
                 <br>We have preprocessed the datasets and split them into: <b>meta-training</b>; <b>in-domain</b> and
                 <b>out-of-domain meta-validation</b>; <b>in-domain, out-of-domain</b> and <b>out-of-task
                 meta-testing</b> sets.
@@ -175,8 +174,8 @@
                 <tr>
                     <th scope="col">Dataset Name</th>
                     <th scope="col">Domain</th>
-                    <th scope="col">#Class</th>
-                    <th scope="col">#Images</th>
+                    <th scope="col"># Classes</th>
+                    <th scope="col"># Images</th>
                     <th scope="col">Role</th>
                     <th scope="col">Original Dataset Link</th>
                 </tr>
@@ -249,7 +248,7 @@
                     <td>Flowers</td>
                     <td>102</td>
                     <td>4080</td>
-                    <td>OD Meta-val</td>
+                    <td>OOD Meta-val</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="https://www.robots.ox.ac.uk/~vgg/data/flowers/">Link <i
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
@@ -259,7 +258,7 @@
                     <td>OCR</td>
                     <td>706</td>
                     <td>28240</td>
-                    <td>OD Meta-val</td>
+                    <td>OOD Meta-val</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="https://github.com/SunHaozhe/OmniPrint">Link <i
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
@@ -269,7 +268,7 @@
                     <td>Plankton</td>
                     <td>86</td>
                     <td>3440</td>
-                    <td>OD Meta-val</td>
+                    <td>OOD Meta-val</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="https://github.com/hsosik/WHOI-Plankton">Link <i
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
@@ -309,7 +308,7 @@
                     <td>Plant Disease</td>
                     <td>38</td>
                     <td>1520</td>
-                    <td>OD Meta-test</td>
+                    <td>OOD Meta-test</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="https://data.mendeley.com/datasets/nnytj2v3n5/1">Link <i
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
@@ -319,7 +318,7 @@
                     <td>Remote Sensing</td>
                     <td>45</td>
                     <td>1800</td>
-                    <td>OD Meta-test</td>
+                    <td>OOD Meta-test</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank" href="https://gcheng-nwpu.github.io/">Link
                         <i
                                 class="fa-solid fa-circle-arrow-right"></i></a></td>
@@ -329,7 +328,7 @@
                     <td>Sports</td>
                     <td>73</td>
                     <td>2920</td>
-                    <td>OD Meta-test</td>
+                    <td>OOD Meta-test</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="https://www.kaggle.com/gpiosenka/sports-classification">Link <i
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
@@ -339,7 +338,7 @@
                     <td>Textures</td>
                     <td>64</td>
                     <td>2560</td>
-                    <td>OD Meta-test</td>
+                    <td>OOD Meta-test</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="https://www.csc.kth.se/cvap/databases/kth-tips/index.html">Link <i
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
@@ -354,8 +353,8 @@
                 <tr>
                     <th scope="col">Dataset Name</th>
                     <th scope="col">Domain</th>
-                    <th scope="col">#Class</th>
-                    <th scope="col">#Images</th>
+                    <th scope="col"># Classes</th>
+                    <th scope="col"># Images</th>
                     <th scope="col">Role</th>
                     <th scope="col">Original Dataset Link</th>
                 </tr>
@@ -397,7 +396,7 @@
                     <td>Natural Image</td>
                     <td>6</td>
                     <td>7247</td>
-                    <td>OD Meta-test</td>
+                    <td>OOD Meta-test</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="https://github.com/lzzcd001/OSLSM">Link
                         <i
@@ -408,7 +407,7 @@
                     <td>Natural Image</td>
                     <td>22</td>
                     <td>862</td>
-                    <td>OD Meta-val</td>
+                    <td>OOD Meta-val</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank" href="https://vizwiz.org/">Link <i
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
                 </tr>
@@ -417,7 +416,7 @@
                     <td>Natural Image</td>
                     <td>3</td>
                     <td>200</td>
-                    <td>OD Meta-test</td>
+                    <td>OOD Meta-test</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="https://www.fc.up.pt/addi/ph2%20database.html">Link <i
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
@@ -431,8 +430,8 @@
                 <tr>
                     <th scope="col">Dataset Name</th>
                     <th scope="col">Domain</th>
-                    <th scope="col">#Keypoint</th>
-                    <th scope="col">#Images</th>
+                    <th scope="col"># Keypoints</th>
+                    <th scope="col"># Images</th>
                     <th scope="col">Role</th>
                     <th scope="col">Original Dataset Link</th>
                 </tr>
@@ -440,7 +439,7 @@
 
                 <tbody>
                 <tr>
-                    <th scope="row">AnimalPose-Trn</th>
+                    <th scope="row">Animal Pose-Trn</th>
                     <td>Animal</td>
                     <td>40</td>
                     <td>3237</td>
@@ -450,7 +449,7 @@
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
                 </tr>
                 <tr>
-                    <th scope="row">AnimalPose-Val</th>
+                    <th scope="row">Animal Pose-Val</th>
                     <td>Animal</td>
                     <td>40</td>
                     <td>2038</td>
@@ -474,7 +473,7 @@
                     <td>Synthetic Animal</td>
                     <td>22</td>
                     <td>20000</td>
-                    <td>OD Meta-val</td>
+                    <td>OOD Meta-val</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="https://github.com/JitengMu/Learning-from-Synthetic-Animals">Link <i
                             class="fa-solid fa-circle-arrow-right"></i></a></td>
@@ -484,7 +483,7 @@
                     <td>Human</td>
                     <td>16</td>
                     <td>28882</td>
-                    <td>OD Meta-test</td>
+                    <td>OOD Meta-test</td>
                     <td><a class="btn btn-sm btn-outline-dark" target="_blank"
                            href="http://human-pose.mpi-inf.mpg.de/">Link
                         <i
@@ -500,8 +499,8 @@
                 <tr>
                     <th scope="col">Dataset Name</th>
                     <th scope="col">Domain</th>
-                    <th scope="col">#Concept</th>
-                    <th scope="col">#Images</th>
+                    <th scope="col"># Concepts</th>
+                    <th scope="col"># Images</th>
                     <th scope="col">Role</th>
                     <th scope="col">Original Dataset Link</th>
                 </tr>
@@ -590,23 +589,23 @@
             </footer>
         </section>
 
-        <!-- ======= Gallery Section ======= -->
-        <section id="gallery" class="main special">
-            <header class="major">
-                <h2>Gallery</h2>
-            </header>
+<!--        &lt;!&ndash; ======= Gallery Section ======= &ndash;&gt;-->
+<!--        <section id="gallery" class="main special">-->
+<!--            <header class="major">-->
+<!--                <h2>Gallery</h2>-->
+<!--            </header>-->
 
-            <span class="image center">
-											<image src="images/gallery.jpg" width="100%" height="100%"/>
-										</span>
+<!--            <span class="image center">-->
+<!--											<image src="images/gallery.jpg" width="100%" height="100%"/>-->
+<!--										</span>-->
 
-            <footer class="major">
-                <ul class="actions special">
-                    <li><a href="https://drive.google.com/drive/folders/1NKb0uLJqmAauE9FY18T-qQ-T6k5LA_yt"
-                           class="button primary">Find More</a></li>
-                </ul>
-            </footer>
-        </section>
+<!--            <footer class="major">-->
+<!--                <ul class="actions special">-->
+<!--                    <li><a href="https://drive.google.com/drive/folders/1NKb0uLJqmAauE9FY18T-qQ-T6k5LA_yt"-->
+<!--                           class="button primary">Find More</a></li>-->
+<!--                </ul>-->
+<!--            </footer>-->
+<!--        </section>-->
         <!-- ======= Citation Section ======= -->
         <section id="citation" class="main special">
             <div class="content">
